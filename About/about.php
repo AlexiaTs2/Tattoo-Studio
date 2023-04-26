@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../Nav/nav.css">
     <link rel="shortcut icon" type= "x-icon" href="../Images/Logo.png">
     <link rel="stylesheet" type="text/css" href="aboutStyle.css">
-    <title>About 000</title>
+    <title>About</title>
 </head>
 <body>
     <header>
