@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../ContactPage/background.jpg");
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+.contact-box {
+
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 57%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 4% 0.5%;
+
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.contact-box p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.contact-box input {
+    color: white;
+    width: 48%;
+    margin-bottom: 4%;
+}
+
+::placeholder{
+    color: white;
+    font-family: sans-serif;
+}
+
+.contact-box input[type="submit"]{
+    width: 100%;
+}
+
+.contact-box input[type="text"],
+input[type="password"],
+input[type="email"] {
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    background: transparent;
+    outline: none;
+    margin-right: 1.1%;
+    height: 40px;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.contact-box textarea {
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    width: 97%;
+    height: 8em;
+    resize: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 0, 42, 255);
+}
+
+.contact-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: whitesmoke;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.contact-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: rgba(255, 0, 42, 255);
+    color: #000;
+    transition: all 40ms;
+}
+
+.container form h4 {
+    color: whitesmoke;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-box {
+        top: 70%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact-box {
+        top: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        padding: 9px 0 20px;
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        top: -32px;
+        border-radius: 50%;
+        left: calc(60% - 50px);
+    }
+
+    .contact-box {
+        top: 60%;
+    }
+
+    .contact-box {
+        width: 98%;
+    }
+
+    .input{
+        margin-right: 0.1%;
+    }
+}

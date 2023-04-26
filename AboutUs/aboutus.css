@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap");
+
+body {
+  background-image: url('background.jpg');
+  font-family: "Roboto", sans-serif;
+  color:white;
+}
+
+.abouts {
+  margin-left: 25%;
+  margin-top: 2%;
+}
+
+.container {
+  float: left;
+  min-height: 91vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 300px;
+  max-width: 300px;
+  min-height: 490px;
+  position: relative;
+  text-align: center;
+  margin: 32px;
+  background: rgb(0,0, 0 , 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.pic-container {
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  margin: 40px auto 20px;
+}
+.pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: auto;
+  position: relative;
+  top: 5px;
+  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.name {
+  font-size: 22px;
+ color: whitesmoke;
+}
+.title {
+color:rgba(255, 0, 42, 255);
+font-size: 14px;
+padding: 8px;
+}
+.description {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 10px 22px;
+}
+.message {
+  font-size: 22px;
+  background: rgba(255, 0, 42, 255);
+  box-shadow: 0 0 20px 4px rgba(255, 0, 42, 255), 0 0 20px 0px rgba(255, 0, 42, 255);
+  border-radius: 32px;
+  padding: 10px;
+  margin: 16px 28px;
+}
+.message:hover {
+  box-shadow: 0 0 20px 0px rgba(255, 0, 42, 255) , 0 4px 20px 0px rgba(255, 0, 42, 255);
+  transition: 0.3s;
+}
+.links {
+  margin: 42px 0;
+}
+.text {
+  text-decoration: none;
+  color: #fff;
+}
+
+.text:hover {
+  text-decoration: none;
+}
+
+.fb,.yt,.cp,.bg {
+  background:rgba(255, 0, 42, 255);
+  display: inline-block;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0px 4px;
+}
+.fb {
+    color: #fff;  
+  box-shadow: 0px 4px 30px rgba(255, 0, 42, 255);
+}
+.cp {
+    color: #fff;
+  box-shadow: 0px 4px 30px rgba(255, 0, 42, 255);
+}
+.yt {
+    color: #fff;
+  box-shadow: 0px 4px 30px rgba(255, 0, 42, 255);
+}
+.bg {
+    color: #fff;
+  box-shadow: 0px 4px 30px rgba(255, 0, 42, 255);
+}
+.fb:hover {
+  transition: 0.3s;
+  box-shadow: 0px 8px 30px rgba(255, 0, 42, 255);
+}
+.cp:hover {
+  transition: 0.3s;
+  box-shadow: 0px 8px 30px rgba(255, 0, 42, 255);
+}
+.yt:hover {
+  transition: 0.3s;
+  box-shadow: 0px 8px 30px rgba(255, 0, 42, 255);
+}
+.bg:hover {
+  transition: 0.3s;
+  box-shadow: 0px 8px 30px rgba(255, 0, 42, 255);
+}
+
+@media screen and (max-width: 600px) {
+  .card{
+    margin: -60px;
+  }
+}
