@@ -77,3 +77,14 @@ input[type="submit"]:hover {
     color: #000;
     transition: all 40ms;
 }
+
+
+@media screen and (max-width: 600px) {
+  .bookform {
+    width: 89%;
+    margin: 0 auto;
+    padding: 19px;
+    padding-right: 7%;
+  } 
+}
+
