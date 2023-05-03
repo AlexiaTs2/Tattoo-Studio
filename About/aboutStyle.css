@@ -10,10 +10,12 @@ body{
 
 .paragraph-left{
 text-align: left;
+margin-right: 50%;
 }
 
 .paragraph-right{
 text-align: right;
+margin-left: 50%;
 }
 
 .Header{
@@ -36,3 +38,15 @@ text-align: right;
   width: 99.5%;
 }
 
+.container{
+  height: 250px;
+  max-height: 500px;
+}
+
+.image-left{
+  margin-left: 50% ;
+}
+
+.image-right{
+  margin-right: 50%;
+}

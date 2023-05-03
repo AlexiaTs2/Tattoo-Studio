@@ -26,6 +26,7 @@
     <div class="container">
       <h3 class="Information-right white">Our Artists</h3>
       <p class="paragraph-right white">Our talented artists are dedicated to creating stunning, one-of-a-kind tattoos that reflect each client's individuality. They are passionate about their craft and always stay up-to-date with the latest techniques and trends.</p>
+
     </div>
     <div class="container">
       <h3 class="Information-left white">Our Studio</h3>
