@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Nav/nav.css"> 
     <link rel="stylesheet" href="FAQStyle.css">
-    <title>FAQ Page</title>
+    <title>FAQ Page 000</title>
 </head>
 <body>
     <header>
