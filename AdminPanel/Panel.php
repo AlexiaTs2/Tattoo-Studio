@@ -29,7 +29,7 @@ $database = "studio";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="AdminNav/nav.css">
     <link rel="stylesheet" href="PanelStyle.css">
-    <title>Document</title>
+    <title>AdminPanel</title>
 
     <style>
         table,tr,th,td{
