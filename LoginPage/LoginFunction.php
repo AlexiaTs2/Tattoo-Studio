@@ -20,7 +20,7 @@
         $user = $sql->fetch();
 
         if(isset($user['ID'] )){
-            header("Location: http://localhost/TattoStudio/IndexPage/indexpage.php");
+          header("Location: http://localhost/TattoStudio/IndexPage/indexpage.php");
             exit();
         }else{
             $message = "Username and/or Password incorrect.\\nTry again.";
