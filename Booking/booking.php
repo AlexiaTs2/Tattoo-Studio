@@ -15,6 +15,7 @@
     <main>
       <br>
       <div class="bookform">
+      <img src="../Booking/BookingIcon.png" class="avatar">
         <form action="reservation.php" method="post">
             <div class="elem-group">
               <label for="name">Your Name</label>
