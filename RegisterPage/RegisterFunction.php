@@ -33,7 +33,7 @@
 			$sql = "INSERT INTO user (Name,Password,Email) VALUES (?,?,?)";
 			$c = $connection->prepare($sql)->execute([$username,$password, $email]);
 			header("Location: http://localhost/Tattoo-Studio/LoginPage/loginform.php");
-							  http://localhost/Tattoo-Studio/LoginPage/loginform.php
+							
 			exit();
 		} else {
 
