@@ -1,4 +1,7 @@
 <?php
+
+  session_start();  
+
     $servername = "localhost";
     $username = "root";
     $password = "1234";
@@ -15,12 +18,15 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $sql = $connection->prepare("SELECT * FROM user WHERE name = ? AND password = ?"); 
-        $sql->execute([$username,$password]); 
+        $sql = $connection->prepare("SELECT * FROM user WHERE name = ?"); 
+        $sql->execute([$username]); 
         $user = $sql->fetch();
 
-        if(isset($user['ID'] )){
-          header("Location: http://localhost/TattoStudio/IndexPage/indexpage.php");
+      if ( $user && password_verify( $password, $user['Password'] ))
+
+        {
+          $_SESSION['user'] = $user;
+          header("Location: http://localhost/Tattoo-Studio/IndexPage/indexpage.php");
             exit();
         }else{
             $message = "Username and/or Password incorrect.\\nTry again.";
