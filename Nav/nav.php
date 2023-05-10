@@ -28,7 +28,7 @@ session_start();
 </div>
 <?php }else {?>
   <span class="logreg">
-    <a href="../LoginPage/loginform.php">Hy   <?php echo $_SESSION['user']['Name'] ?></a>
+    <a href="*">Name :   <?php echo $_SESSION['user']['Name'] ?></a>
     <a href="../LogOut/logout.php">Log out</a>
  </span>
 </div>
