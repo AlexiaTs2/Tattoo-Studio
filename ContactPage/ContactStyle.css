@@ -157,7 +157,9 @@ textarea::-webkit-scrollbar-thumb {
         width: 98%;
     }
 
-    .input{
+    .contact-box input[type="text"],
+    input[type="password"],
+    input[type="email"] {
         margin-right: 0.1%;
     }
 }
