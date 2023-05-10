@@ -26,6 +26,7 @@ margin-left: 50%;
 .Information-left{
   text-align: left;
   font-size: x-large;
+  margin-left: 20px;
 }
 
 .Information-right{
@@ -44,9 +45,11 @@ margin-left: 50%;
 }
 
 .image-left{
-  margin-left: 50% ;
+  float: left;
+  width: 27%;
 }
 
 .image-right{
-  margin-right: 50%;
+  float: right;
+  width: 27%;
 } 
