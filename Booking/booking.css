@@ -12,6 +12,15 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   }
 
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 18px;
+    left: calc(50% - 50px);
+}
+
 div.elem-group {
     margin: 20px 0;
     overflow: hidden;
