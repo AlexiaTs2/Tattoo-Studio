@@ -56,6 +56,8 @@ $database = "studio";
       </tr>     
         <?php
 
+            $PDOstatement = $connection ->prepare('SELECT * FROM booking');
+
              for($i = 0; $i < count($result); $i++){
                 echo "<tr>";
               //  echo   "<td>" . $result[$i]['ID'] . "</td>";
