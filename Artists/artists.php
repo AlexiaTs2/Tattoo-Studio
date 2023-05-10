@@ -31,7 +31,7 @@
         <br>
         <div class="btns">
           <button>Tattoos</button>
-          <button>Booking</button>
+          <button onclick="location.href = '../Booking/booking.php';">Booking</button>
         </div>
       </div>
     
@@ -50,7 +50,7 @@
         <p class="inf">Tomas’ interest and love for all things tattooing was peaked because the majority of adults that surrounded him while he was growing up were heavily tattooed.</p>
         <div class="btns">
           <button>Tattoos</button>
-          <button>Booking</button>
+          <button onclick="location.href = '../Booking/booking.php';">Booking</button>
         </div>
       </div>
   </form>
@@ -70,8 +70,7 @@
         <p class="inf">Taylor has always been surrounded by tattoos even at a young age. His mother made clothes in the 80's, exposing him to a ton of ink to be inspired by.</p>
         <div class="btns">
           <button>Tattoos</button>
-          
-          <button type="submit">Booking</button>
+          <button onclick="location.href = '../Booking/booking.php';">Booking</button>
         </div>
       </div>
   
