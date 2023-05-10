@@ -21,15 +21,18 @@
   <div>
     <div class="container">
       <h3 class="Information-left white">Our Mission</h3>
+     <!-- <img src="../About/OurMission.jpeg"> -->
       <p class="paragraph-left white">Our mission is to provide high-quality tattoo artistry in a comfortable and welcoming environment. We strive to make each of our clients feel valued and satisfied with their tattoo experience.</p>
     </div>
     <div class="container">
       <h3 class="Information-right white">Our Artists</h3>
+      <!-- <img src="../About/ArtistsPhoto.jpeg"> -->
       <p class="paragraph-right white">Our talented artists are dedicated to creating stunning, one-of-a-kind tattoos that reflect each client's individuality. They are passionate about their craft and always stay up-to-date with the latest techniques and trends.</p>
 
     </div>
     <div class="container">
       <h3 class="Information-left white">Our Studio</h3>
+     <!-- <img src="../About/OurStudio.jpg"> -->
       <p class="paragraph-left white">Our studio is a clean, modern space that is designed to make our clients feel comfortable and relaxed. We use only the highest quality materials and equipment to ensure a safe and sterile environment for our clients.</p>
     </div>
   </div>
