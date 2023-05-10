@@ -21,6 +21,7 @@
   <div>
     <div class="container">
       <h3 class="Information-left white">Our Mission</h3>
+      <img src="../About/OurMission.jpg">
       <p class="paragraph-left white">Our mission is to provide high-quality tattoo artistry in a comfortable and welcoming environment. We strive to make each of our clients feel valued and satisfied with their tattoo experience.</p>
     </div>
     <div class="container">
