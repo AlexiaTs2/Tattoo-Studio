@@ -14,7 +14,6 @@
         <header>
             <?php include('../Nav/nav.php'); ?>
         </header> 
-
       <div class="container">
       <div class="box">
       <div class="images">
@@ -35,7 +34,7 @@
           <button>Booking</button>
         </div>
       </div>
-      
+    
       <div class="box">
         <div class="images">
        <img class="artist" src="profile2.jpg" alt="">
@@ -54,6 +53,8 @@
           <button>Booking</button>
         </div>
       </div>
+  </form>
+
       <div class="box">
         <div class="images">
        <img class="artist" src="profile3.jpg" alt="">
@@ -69,9 +70,11 @@
         <p class="inf">Taylor has always been surrounded by tattoos even at a young age. His mother made clothes in the 80's, exposing him to a ton of ink to be inspired by.</p>
         <div class="btns">
           <button>Tattoos</button>
-          <button>Booking</button>
+          
+          <button type="submit">Booking</button>
         </div>
       </div>
+  
     </div>
     </body>
     </html>
