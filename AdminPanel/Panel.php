@@ -30,14 +30,6 @@ $database = "studio";
     <link rel="stylesheet" href="AdminNav/nav.css">
     <link rel="stylesheet" href="PanelStyle.css">
     <title>AdminPanel</title>
-
-    <style>
-        table,tr,th,td{
-            border:1px solid black;
-        }
-        
-    </style>
-
 </head>
 <header>
 <?php include('AdminNav/nav.php'); ?>
