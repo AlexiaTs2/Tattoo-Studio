@@ -40,6 +40,18 @@ table {
     background-color: #f00;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
   }
+
+  a.ready {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: green;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+  
   
   a.buttondel  {
     background-color: #c00;
