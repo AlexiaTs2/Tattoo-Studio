@@ -51,7 +51,7 @@ $conn->close();
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="AdminNav/nav.css">
-  <link rel="stylesheet" href="editpage.css">
+  <link rel="stylesheet" href="Styles/editpage.css">
 </head>
 <header>
     <?php include('AdminNav/nav.php'); ?>
