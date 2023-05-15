@@ -10,7 +10,7 @@ session_start();
 </style>
 </head>
 <body>
-  
+
 <div class="topnav" id="myTopnav">
   <a href="../IndexPage/indexpage.php" class="active">Home</a>
   <a href="../Gallery/Gallery.php">Gallery</a>
@@ -28,8 +28,8 @@ session_start();
 </div>
 <?php }else {?>
   <span class="logreg">
-    <a href="*">Name :   <?php echo $_SESSION['user']['Name'] ?></a>
-    <a href="../LogOut/logout.php">Log out</a>
+    <a><i class="fa fa-user" aria-hidden="true"></i> <?php echo $_SESSION['user']['Name'] ?></a>
+    <a href="../LogOut/logout.php"> <i class="fa fa-sign-out" aria-hidden="true"></i> Log out</a>
  </span>
 </div>
 <?php  }?>
