@@ -12,7 +12,7 @@ session_start();
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="../IndexPage/indexpage.php" class="active">Home</a>
+  <a href="../IndexPage/indexpage.php">Home</a>
   <a href="../Gallery/Gallery.php">Gallery</a>
   <a href="../FAQ/FAQ.php">FAQ</a>
   <a href="../Artists/Artists.php">Artists</a>
