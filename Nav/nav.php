@@ -10,7 +10,7 @@ session_start();
 </style>
 </head>
 <body>
-
+  
 <div class="topnav" id="myTopnav">
   <a href="../IndexPage/indexpage.php" class="active">Home</a>
   <a href="../Gallery/Gallery.php">Gallery</a>
