@@ -11,7 +11,7 @@
 
 <div class="topnav" id="myTopnav">
   <a href="../IndexPage/indexpage.php" class="active">Home</a>
-  <a href="../AdminPanel/Panel.php">Admin-home</a>
+  <a href="../AdminPanel/Panel.php">Users</a>
   <a href="../AdminPanel/bookingpanel.php">Booking</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
