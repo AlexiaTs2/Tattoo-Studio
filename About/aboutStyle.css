@@ -21,6 +21,10 @@ body{
 
 .image{
   height: 450px;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .paragraph-left{
