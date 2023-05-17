@@ -96,5 +96,9 @@ input[type="submit"]:hover {
     padding: 19px;
     padding-right: 7%;
   } 
+
+  .avatar{
+    visibility: hidden;
+  }
 }
 
