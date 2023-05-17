@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type= "x-icon" href="../Images/Logo.png">
     <link rel="stylesheet" href="../Nav/nav.css"> 
-    <link rel="stylesheet" href="Contactstyle.css">
+    <link rel="stylesheet" href="ContactStyle.css">
     <?php include ('ContactFunction.php'); ?>
     <title>Contact us</title>
 </head>
