@@ -1,3 +1,72 @@
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "1234";
+$database = "studio";
+
+try {
+    $connection = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
+    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    //echo "Connected successfully!";
+} catch(PDOException $e) {
+    //echo "Connection failed: " . $e->getMessage();
+}
+
+if (isset($_POST['submit'])) {
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $email = $_POST['email'];
+    $confirmPassword = $_POST['confirmPassword'];
+
+    $errors = [];
+
+    if (strlen($username) < 3 || strlen($username) > 20) {
+        $errors[] = "Invalid username!";
+    }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = "Invalid email!";
+    }
+
+    if ($password != $confirmPassword) {
+        $errors[] = "Passwords do not match!";
+    }
+
+    // Password requirements:
+    // - At least one uppercase letter
+    // - At least one digit
+    // - Minimum length of 8 characters
+    $pattern = "/^(?=.*\d)(?=.*[A-Z]).{8,}$/";
+    if (!preg_match($pattern, $password)) {
+        $errors[] = "Password must contain at least one uppercase letter and one digit, and be at least 8 characters long!";
+    }
+
+    $sql = "SELECT * FROM user WHERE Email = ?";
+    $pdoStatement = $connection->prepare($sql);
+    $pdoStatement->execute([$email]);
+    $data = $pdoStatement->fetchAll();
+
+    if (count($data) != 0) {
+        $errors[] = "Email already registered!";
+    }
+
+    if (!$errors) {
+     
+		$hashedPassword = password_hash($password, PASSWORD_BCRYPT, ["cost" => 8]);
+
+        $sql = "INSERT INTO user (Name, Password, Email) VALUES (?,?,?)";
+        $pdoStatement = $connection->prepare($sql);
+        $pdoStatement->execute([$username, $hashedPassword, $email]);
+
+        header("Location: http://localhost/Tattoo-Studio/LoginPage/loginform.php");
+        exit();
+    } 
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +78,6 @@
   <link rel="shortcut icon" type= "x-icon" href="../Images/Logo.png">
   <link rel="stylesheet" href="../Nav/nav.css"> 
   <link rel="stylesheet" href="register.css">
-  <?php include 'RegisterFunction.php'; ?>
 </head>
 <header>
     <?php include('../Nav/nav.php'); ?>
@@ -20,7 +88,8 @@
 <?php
 if ( isset($errors) ) {
 
-  print_r( $errors );
+  foreach( $errors as $error )
+    echo "<b style='color:Red'>$error</b>";
 }
 ?>
           <form action="register.php" method="post">
@@ -31,7 +100,7 @@ if ( isset($errors) ) {
           <p>Password</p>
           <input type="password" name="password" placeholder="Enter Password">
           <p>Confirm Password</p>
-          <input type="password" name="password" placeholder="Enter Confirm Password">
+          <input type="password" name="confirmPassword" placeholder="Enter Confirm Password">
           <input type="submit" name="submit" value="Register">
            
           </form>

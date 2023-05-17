@@ -23,9 +23,22 @@ if (isset($_POST['submit'])) {
   $checkin_hour = $_POST['checkin_hour'];
   $artist = $_POST['artist'];
 
+$errors = array();
+
+  $result = $conn ->query("SELECT * FROM booking WHERE checkin_date = '$checkin_date' AND checkin_hour = '$checkin_hour'");
+
+  if ( $result ) {
+
+    $errors[] = "chasat e zaet";
+    print_r($errors);
+  }
+
+if ( !$errors) {
+
   // Записване на информацията в базата данни
   $sql = "INSERT INTO booking (visitor_name, visitor_email, visitor_phone, checkin_date, checkin_hour, artist) 
         VALUES ('$visitor_name', '$visitor_email', '$visitor_phone', '$checkin_date', '$checkin_hour', '$artist')";
+
 
 if ($conn->query($sql) === TRUE) {
     // Информацията е успешно записана в базата данни
@@ -36,7 +49,7 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-  
+}  
 }
 
 ?>
