@@ -89,7 +89,7 @@ if (isset($_POST['submit'])) {
 if ( isset($errors) ) {
 
   foreach( $errors as $error )
-    echo "<b style='color:Red'>$error</b>";
+    echo "<p style='color:Red'>$error</p>";
 }
 ?>
           <form action="register.php" method="post">
