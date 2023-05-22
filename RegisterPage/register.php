@@ -85,13 +85,6 @@ if (isset($_POST['submit'])) {
 <div class="login-box">
   <img src="regavatar.jpg" class="avatar">
       <h1>Register Here</h1>
-<?php
-if ( isset($errors) ) {
-
-  foreach( $errors as $error )
-    echo "<p style='color:Red'>$error</p>";
-}
-?>
           <form action="register.php" method="post">
           <p>Username</p>
           <input type="text" name="username" placeholder="Enter Username">
@@ -105,7 +98,17 @@ if ( isset($errors) ) {
            
           </form>
 </div>
-
+<?php
+if ( isset($errors) ) {
+  echo "<script>";
+  echo "alert('";
+  foreach( $errors as $error ) {
+    echo $error . "\\n";
+  }
+  echo "');";
+  echo "</script>";
+}
+?>
 <footer>
     <?php //include('../Footer/foter.php'); ?> 
 </footer>

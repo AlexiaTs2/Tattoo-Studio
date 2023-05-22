@@ -17,6 +17,17 @@ body {
     box-sizing: border-box;
     padding: 70px 30px;
 }
+
+.errors{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left : 15%;
+    position: absolute;
+}
+
 .avatar{
     width: 100px;
     height: 100px;
