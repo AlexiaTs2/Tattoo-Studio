@@ -13,8 +13,9 @@ session_start();
 
 <div class="topnav" id="myTopnav">
   <a href="../IndexPage/indexpage.php">Home</a>
-  <a href="../Gallery/Gallery.php">Gallery</a>
-  <a href="../FAQ/FAQ.php">FAQ</a>
+  <a href="../Gallery/Gallery.php">Gallery</a>  
+  <a href="../About/about.php">About</a>
+
 
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -30,9 +31,9 @@ session_start();
   <span class="logreg">
     <a href="../LoginPage/loginform.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a> </span>
 </div>
-<?php }else {?>  
+<?php }else {?>    
+  <a href="../FAQ/FAQ.php">FAQ</a>
   <a href="../Artists/Artists.php">Artists</a>
-  <a href="../About/about.php">About</a>
   <span class="logreg">
     <a><i class="fa fa-user" aria-hidden="true"></i> <?php echo $_SESSION['user']['Name'] ?></a>
 <?php
