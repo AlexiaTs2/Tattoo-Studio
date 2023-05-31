@@ -80,8 +80,8 @@ $conn->close();
   <br>
   <label for="email">Email:</label><br>
   <input type="email" name="email" id="email" value="<?php echo $email; ?>">
-  
-  <input type="radio" name="role" value="1" > 
+    
+  <input type="radio" name="role" value="1" >
   <input type="radio" name="role" value="2" >
 
   </label>

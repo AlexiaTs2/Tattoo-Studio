@@ -76,7 +76,7 @@ a.new-member {
     text-decoration: none;
     color: rgba(255,0,42,255);
   }
-
+  
   @media screen and (max-width: 700px) {
     .login-box{
      top: 58%;
