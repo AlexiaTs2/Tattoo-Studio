@@ -37,7 +37,7 @@ session_start();
 <?php
 if ( @$_SESSION['user']['role_id'] == 2 ) {
   ?>
-    <a href="../AdminPanel/Panel.php"><i class="fa fa-user-secret" aria-hidden="true"></i>Admin</a>
+    <a href="../AdminPanel/Panel.php"><i class="fa fa-user-secret" aria-hidden="true"></i>Admin-Panel</a>
 <?php
 }
 ?>
