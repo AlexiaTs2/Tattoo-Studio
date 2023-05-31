@@ -18,8 +18,8 @@
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-  <span class="logreg">
-    <a href="../LoginPage/loginform.php">Login</a> </span>
+<span class="logreg">
+    <a href=""></a> <?php echo @$_SESSION['user']['Name'] ?></span>
 </div>
 <script>
 function myFunction() {

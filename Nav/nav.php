@@ -21,6 +21,11 @@ session_start();
     <i class="fa fa-bars"></i>
   </a>
   <?php 
+
+//echo "<pre>";/
+//print_r( $_SESSION['user'] );
+
+
   if( @!$_SESSION['user'] ) {
   ?>
   <span class="logreg">
@@ -29,6 +34,13 @@ session_start();
 <?php }else {?>
   <span class="logreg">
     <a><i class="fa fa-user" aria-hidden="true"></i> <?php echo $_SESSION['user']['Name'] ?></a>
+<?php
+if ( @$_SESSION['user']['role_id'] == 2 ) {
+  ?>
+    <a href="../AdminPanel/Panel.php"><i class="fa fa-user-secret" aria-hidden="true"></i>Admin</a>
+<?php
+}
+?>
     <a href="../LogOut/logout.php"> <i class="fa fa-sign-out" aria-hidden="true"></i> Log out</a>
  </span>
 </div>

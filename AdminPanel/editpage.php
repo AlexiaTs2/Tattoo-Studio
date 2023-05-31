@@ -26,9 +26,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Get the updated data from the form
   $name = $_POST["name"];
   $email = $_POST["email"];
+  $role = $_POST["role"];
+
+  $conn->query("DELETE FROM user_role WHERE user_id = $id");
+  $conn->query("INSERT INTO user_role SET user_id = $id, role_id = $role");
 
   // Update the data in the database
   $sql = "UPDATE user SET name='$name', email='$email' WHERE id=$id";
+
+
+
+
   if ($conn->query($sql) === TRUE) {
     // Redirect back to the table page
     header("Location: Panel.php");
@@ -68,6 +76,11 @@ $conn->close();
   <br>
   <label for="email">Email:</label><br>
   <input type="email" name="email" id="email" value="<?php echo $email; ?>">
+  
+  <input type="radio" name="role" value="1" > 
+  <input type="radio" name="role" value="2" >
+
+  </label>
   <br><br>
   <input type="submit" value="Update">
 </form>

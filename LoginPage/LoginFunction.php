@@ -18,7 +18,12 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $sql = $connection->prepare("SELECT * FROM user WHERE name = ?"); 
+        $sql = $connection->prepare("
+          SELECT u.*, ur.role_id 
+          FROM user u
+          LEFT JOIN user_role ur ON ur.user_id = u.id  
+          WHERE u.name = ?
+        "); 
         $sql->execute([$username]); 
         $user = $sql->fetch();
 
