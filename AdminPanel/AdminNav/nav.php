@@ -19,7 +19,7 @@
     <i class="fa fa-bars"></i>
   </a>
 <span class="logreg">
-    <a href=""></a> <?php echo @$_SESSION['user']['Name'] ?></span>
+<a><i class="fa fa-user" aria-hidden="true"></i> <?php echo $_SESSION['user']['Name'] ?></a>
 </div>
 <script>
 function myFunction() {
