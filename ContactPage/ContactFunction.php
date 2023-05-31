@@ -1,4 +1,11 @@
 <?php
+
+session_start();
+if(!isset($_SESSION['user'])){
+header("Location: http://localhost/Tattoo-Studio/LoginPage/loginform.php");
+exit;
+}
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
