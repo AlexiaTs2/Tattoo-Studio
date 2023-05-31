@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION['user'])){
+exit;
+}
 // Connect to the MySQL database
 $servername = "localhost";
 $username = "root";
