@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!isset($_SESSION['user'])){
+if(!isset($_SESSION['user']['role_id'])){
 exit;
 }
 // Connect to the MySQL database
@@ -80,9 +80,16 @@ $conn->close();
   <br>
   <label for="email">Email:</label><br>
   <input type="email" name="email" id="email" value="<?php echo $email; ?>">
-    
+  <div class="role-user">
+    <label for="role">User</label>
   <input type="radio" name="role" value="1" >
-  <input type="radio" name="role" value="2" >
+  </div>
+  
+  <div class="role-admin">
+  <label for="role">Admin</label>
+  <input type="radio" name="role" value="2">
+  </div>
+  
 
   </label>
   <br><br>

@@ -8,7 +8,7 @@ body {
     
 .login-box{
     width: 320px;
-    height: 420px;
+    height: 430px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     top: 50%;
@@ -67,6 +67,14 @@ h1{
     background: rgba(255,0,42,255);
     color: #000;
     transition:all 40ms ;
+}
+
+.role-admin{
+    float: right;
+}
+
+.role-user{
+    float: left;
 }
 a.new-member {
     display: block;
