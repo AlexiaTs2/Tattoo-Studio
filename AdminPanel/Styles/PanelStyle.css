@@ -1,6 +1,7 @@
 /* Base styles for desktop */
 
 body {
+  background: url('background.jpg');
     margin: 0;
     padding: 0;
 }
@@ -11,23 +12,23 @@ table {
     width: 100%;
     font-family: Arial, sans-serif;
     font-size: 13px;
-    color: #333;
-    background-color: white;
-  }
+    color: white;
+    background-color:rgba(0, 0, 0, 0.5);
+    }
   
   th, td {
-    border: 1px solid #ddd;
+    border: 1px solid rgba(0, 0, 0);
     padding: 8px;
     text-align: left;
   }
   
   th {
-    background-color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.5);;
     font-weight: bold;
   }
   
   tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: rgba(0, 0, 0, 0.5);;
   }
   
   a.buttondel {
