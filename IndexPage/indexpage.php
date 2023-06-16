@@ -14,7 +14,7 @@
 
     <div class="main">
         <video autoplay loop muted id="video" plays-inline>
-            <source src="CINEMATIC TATTOO STUDIO _ HANDHELD B ROLL _.mp4" type="video/mp4">
+            <source src="backgroundVideo.mp4" type="video/mp4">
         </video>
 
         <?php include('../Nav/nav.php'); ?>
