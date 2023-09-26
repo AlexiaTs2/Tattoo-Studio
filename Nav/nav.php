@@ -28,7 +28,7 @@ session_start();
 
   if( @!$_SESSION['user'] ) {
   ?>
-  <span class="logreg">
+  <span class="logreg"> ;
     <a href="../LoginPage/loginform.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a> </span>
 </div>
 <?php }else {?>    
